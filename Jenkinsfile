@@ -17,5 +17,10 @@ pipeline{
                 sh "ls -la"
             }
         }
+        stage("Despliegue de la aplicacion"){
+            steps{
+                sh "cp dist/AngularAppSebas/* /tmp/deploy"
+            }
+        }
     }
 }

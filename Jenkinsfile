@@ -19,7 +19,7 @@ pipeline{
         }
         stage("Despliegue de la aplicacion"){
             steps{
-                sh "cp dist/AngularAppSebas/* /tmp/deploy"
+                sh "cp dist/democlase06/* /tmp/deploy"
             }
         }
     }

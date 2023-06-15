@@ -9,7 +9,7 @@ pipeline{
 
         stage("Prueba variable"){
             steps{
-                echo ""{prueba}"
+                echo "{prueba}"
             }
         }
         stage("Instalar Dependencias"){

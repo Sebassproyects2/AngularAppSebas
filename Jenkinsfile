@@ -19,7 +19,7 @@ pipeline{
         }
         stage("Despliegue de la aplicacion"){
             steps{
-                sh "cp /var/lib/jenkins/workspace/AngularAppSebas_main* /var/www/html"
+                sh "cp /var/lib/jenkins/workspace/AngularAppSebas_main* dist"
             }
         }
     }

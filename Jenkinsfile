@@ -19,7 +19,7 @@ pipeline{
         }
         stage("Despliegue de la aplicacion"){
             steps{
-                sh "cp dist/AngularAppSebas_main* var/www/html"
+                sh "cp dist/AngularAppSebas* var/www/html"
             }
         }
     }

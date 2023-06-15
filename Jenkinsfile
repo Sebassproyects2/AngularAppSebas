@@ -16,7 +16,7 @@ pipeline{
             steps{
                 sh "ls -l"
                 sh "cd dist"
-                sh "ls -l"
+                sh "pwd"
             }
         }
         stage("Despliegue de la aplicacion"){

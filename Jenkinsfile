@@ -14,7 +14,7 @@ pipeline{
         }
         stage("Mostrar archivos"){
             steps{
-                sh "ls -la"
+                sh "ls -l"
             }
         }
         stage("Despliegue de la aplicacion"){

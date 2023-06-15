@@ -6,12 +6,12 @@ pipeline{
     }
 
     stages{
-
+/*
         stage("Prueba variable"){
             steps{
                 echo "{prueba}"
             }
-        }
+        }*/
         stage("Instalar Dependencias"){
             steps{
                 sh "npm install"

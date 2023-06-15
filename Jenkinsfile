@@ -1,17 +1,12 @@
 pipeline{
     agent any
-/*
+
     enviroment {
         prueba = "Prueba de las variables"
     }
-*/
+
     stages{
-/*
-        stage("Prueba variable"){
-            steps{
-                echo "{prueba}"
-            }
-        }*/
+
         stage("Instalar Dependencias"){
             steps{
                 sh "npm install"
@@ -27,6 +22,12 @@ pipeline{
                 sh "ls -la"
             }
         }
+        stage("Prueba variable"){
+            steps{
+                echo "{prueba}"
+            }
+        }
+        
         /*
         stage("Despliegue de la aplicacion"){
             steps{

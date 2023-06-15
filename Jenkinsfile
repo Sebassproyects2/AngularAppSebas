@@ -1,7 +1,7 @@
 pipeline{
     agent any
 
-    enviroment {
+    environment {
         prueba = "Prueba de las variables"
     }
 
@@ -27,7 +27,7 @@ pipeline{
                 echo "{prueba}"
             }
         }
-        
+
         /*
         stage("Despliegue de la aplicacion"){
             steps{

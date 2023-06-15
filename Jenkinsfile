@@ -1,10 +1,10 @@
 pipeline{
     agent any
-
+/*
     enviroment {
         prueba = "Prueba de las variables"
     }
-
+*/
     stages{
 /*
         stage("Prueba variable"){

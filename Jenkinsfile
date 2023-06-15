@@ -24,7 +24,7 @@ pipeline{
         }
         stage("Prueba variable"){
             steps{
-                echo "{prueba}"
+                echo "${prueba}"
             }
         }
 

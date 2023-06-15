@@ -15,14 +15,15 @@ pipeline{
         stage("Mostrar archivos"){
             steps{
                 sh "ls -l"
-                sh "cd dist"
+               // sh "cd dist"
                 sh "pwd"
             }
         }
+      /*
         stage("Despliegue de la aplicacion"){
             steps{
                 sh "cp /var/lib/jenkins/workspace/AngularAppSebas_main* dist"
             }
-        }
+        }*/
     }
 }

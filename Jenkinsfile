@@ -7,11 +7,11 @@ pipeline{
 
     stages{
 
-        /*stage("Prueba de aprobaciones"){
+        stage("Prueba de aprobaciones"){
             input{
                 message "Desea inicializar?"
                 ok "Si"
-            }*/
+            }
             steps{
                 echo "Comenzando deploy"
             }

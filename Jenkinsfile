@@ -36,11 +36,11 @@ pipeline{
                 echo "${prueba}"
             }
         }
-        post{
-            always{
-                emailext body: "Correo de prueba Sebas", subject: "prueba", to: "sebassolise2000@gmail.com"
-            }
+    post{
+        always{
+            emailext body: "Correo de prueba Sebas", subject: "prueba", to: "sebassolise2000@gmail.com"
         }
+    }
 
         /*
         stage("Despliegue de la aplicacion"){
